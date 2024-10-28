@@ -26,7 +26,7 @@ jobs:
           name: Up
           command: docker compose up -d
       - run:
-          name: Npm
+          name: Update Npm
           command: docker compose exec app npm install
       - save_cache:
           name: Save Cache
